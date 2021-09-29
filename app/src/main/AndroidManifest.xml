@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eval1Androidgrupal">
         <activity
+            android:name=".ViajesMetro"
+            android:exported="true" />
+        <activity
+            android:name=".HistorialPagos"
+            android:exported="true" />
+        <activity
             android:name=".PagarPasaje"
             android:exported="true" />
         <activity

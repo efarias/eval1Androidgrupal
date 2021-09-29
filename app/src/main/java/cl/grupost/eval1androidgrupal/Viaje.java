@@ -7,11 +7,13 @@ public class Viaje implements Serializable {
     int valor;
     String tipo;
     String hora;
+    int serie;
 
-    public Viaje(int valor, String tipo, String hora) {
+    public Viaje(int valor, String tipo, String hora, int serie) {
         this.valor = valor;
         this.tipo = tipo;
         this.hora = hora;
+        this.serie = serie;
     }
 
     public int getValor() {
@@ -38,12 +40,21 @@ public class Viaje implements Serializable {
         this.hora = hora;
     }
 
+    public int getSerie() {
+        return serie;
+    }
+
+    public void setSerie(int serie) {
+        this.serie = serie;
+    }
+
     @Override
     public String toString() {
         return "Viaje{" +
                 "valor=" + valor +
                 ", tipo='" + tipo + '\'' +
                 ", hora='" + hora + '\'' +
+                ", serie=" + serie +
                 '}';
     }
 }

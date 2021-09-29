@@ -30,11 +30,12 @@ public class PagarPasaje extends AppCompatActivity {
         Date date = new Date();
 
         int saldo = tarjetaChip.getSaldo();
+        int serie = (int)(Math.random()*10000000+1);
 
 
         if (saldo > 750){
             tarjetaChip.setSaldo(saldo - 750);
-            viajes.add(new Viaje(750,"Metro",date.toString()));
+            viajes.add(new Viaje(750,"Metro",date.toString(),serie));
 
             String texto = String.valueOf(tarjetaChip.getSaldo());
             Toast.makeText(this,texto,Toast.LENGTH_LONG).show();
@@ -57,11 +58,12 @@ public class PagarPasaje extends AppCompatActivity {
         Date date = new Date();
 
         int saldo = tarjetaChip.getSaldo();
+        int serie = (int)(Math.random()*10000000+1);
 
 
         if (saldo > 600){
             tarjetaChip.setSaldo(saldo - 600);
-            viajes.add(new Viaje(600,"Metro",date.toString()));
+            viajes.add(new Viaje(600,"Metro",date.toString(),serie));
 
             String texto = String.valueOf(tarjetaChip.getSaldo());
             Toast.makeText(this,texto,Toast.LENGTH_LONG).show();
