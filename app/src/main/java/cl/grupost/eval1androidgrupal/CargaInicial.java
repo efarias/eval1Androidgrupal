@@ -9,10 +9,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class CargaInicial extends AppCompatActivity {
     private int numero;
     private TarjetaChip tarjetaChip;
     private EditText txtMontoInicial;
+    private ArrayList<Viaje> viajes = new ArrayList<Viaje>();
 
 
     @Override
@@ -41,6 +44,7 @@ public class CargaInicial extends AppCompatActivity {
 
         Intent intent = new Intent(this,MainActivity.class);
         intent.putExtra("tarjetaChip",tarjetaChip);
+        intent.putExtra("viajes",viajes);
         startActivity(intent);
 
 
