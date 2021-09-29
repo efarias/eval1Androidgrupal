@@ -11,6 +11,12 @@
         android:theme="@style/Theme.Eval1Androidgrupal">
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CargarSaldo"
+            android:exported="true" />
+        <activity
+            android:name=".CargaInicial"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
