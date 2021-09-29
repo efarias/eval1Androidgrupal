@@ -21,19 +21,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="Ingrese Monto Inicial a Cargar"
+        android:text="Ingrese Monto Inicial a Cargar desde $5.000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/txtMontoInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnCargaInicial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,11 +41,12 @@
         app:layout_constraintVertical_bias="0.241" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCargaInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="312dp"
         android:text="Cargar"
+        android:onClick="cargaInicial"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
